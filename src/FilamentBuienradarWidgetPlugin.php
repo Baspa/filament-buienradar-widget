@@ -2,8 +2,9 @@
 
 namespace Baspa\FilamentBuienradarWidget;
 
-use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Contracts\Plugin;
+use Baspa\FilamentBuienradarWidget\Widgets\BuienradarWidget;
 
 class FilamentBuienradarWidgetPlugin implements Plugin
 {
@@ -14,7 +15,10 @@ class FilamentBuienradarWidgetPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->widgets([
+                BuienradarWidget::class,
+            ]);
     }
 
     public function boot(Panel $panel): void
