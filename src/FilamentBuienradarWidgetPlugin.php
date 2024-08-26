@@ -3,6 +3,7 @@
 namespace Baspa\FilamentBuienradarWidget;
 
 use Baspa\FilamentBuienradarWidget\Widgets\ForecastForStationWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastReportWidget;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
@@ -18,6 +19,7 @@ class FilamentBuienradarWidgetPlugin implements Plugin
         $panel
             ->widgets([
                 ForecastForStationWidget::class,
+                ForecastReportWidget::class,
             ]);
     }
 

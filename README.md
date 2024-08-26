@@ -85,6 +85,10 @@ ForecastForStationWidget::make([
 ])
 ```
 
+### Forecast report
+
+![Forecast report](./docs/forecast-report.png)
+
 ## Testing
 
 ```bash
