@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Baspa\FilamentBuienradarWidget\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentBuienradarWidgetCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-buienradar-widget';
 
     public $description = 'My command';
 
