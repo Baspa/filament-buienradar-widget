@@ -33,7 +33,7 @@ class BuienradarWidget extends Widget
 
     public function mount(): void
     {
-        $buienradar = new Buienradar();
+        $buienradar = new Buienradar;
 
         $this->forecast = $buienradar->actualForecastForStation(config('buienradar-widget.station') ?? MeasuringStation::VOLKEL)->toArray();
     }
