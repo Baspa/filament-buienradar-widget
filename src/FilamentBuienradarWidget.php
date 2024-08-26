@@ -2,6 +2,4 @@
 
 namespace Baspa\FilamentBuienradarWidget;
 
-class FilamentBuienradarWidget
-{
-}
+class FilamentBuienradarWidget {}
