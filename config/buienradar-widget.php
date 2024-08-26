@@ -8,6 +8,7 @@ return [
 
     // Whether to show the temperature, weather description, wind speed, wind direction, humidity and last update
     'show' => [
+        'icon' => true,
         'temperature' => true,
         'weather_description' => true,
         'wind_speed' => true,
