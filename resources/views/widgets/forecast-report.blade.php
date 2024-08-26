@@ -7,7 +7,7 @@
                     {{ \Carbon\Carbon::parse($forecast['published'])->format('d M Y, H:i') }}</p>
                 <p class="text-lg font-semibold">{{ $forecast['summary'] }}</p>
                 <div class="prose max-w-none">
-                    {!! nl2br(e($forecast['text'])) !!}
+                    {!! nl2br(new Illuminate\Support\HtmlString($forecast['text'])) !!}
                 </div>
                 <div class="mt-4 pt-4 border-t border-gray-200">
                     <p class="font-semibold">{{ $forecast['author'] }}</p>

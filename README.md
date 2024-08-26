@@ -89,6 +89,14 @@ ForecastForStationWidget::make([
 
 ![Forecast report](./docs/forecast-report.png)
 
+### Forecast short term
+
+![Forecast short term](./docs/forecast-short-term.png)
+
+### Forecast long term
+
+![Forecast long term](./docs/forecast-long-term.png)
+
 ## Testing
 
 ```bash

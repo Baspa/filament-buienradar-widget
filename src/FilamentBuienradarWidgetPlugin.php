@@ -2,10 +2,12 @@
 
 namespace Baspa\FilamentBuienradarWidget;
 
-use Baspa\FilamentBuienradarWidget\Widgets\ForecastForStationWidget;
-use Baspa\FilamentBuienradarWidget\Widgets\ForecastReportWidget;
-use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Contracts\Plugin;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastReportWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastLongTermWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastShortTermWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastForStationWidget;
 
 class FilamentBuienradarWidgetPlugin implements Plugin
 {
@@ -20,6 +22,8 @@ class FilamentBuienradarWidgetPlugin implements Plugin
             ->widgets([
                 ForecastForStationWidget::class,
                 ForecastReportWidget::class,
+                ForecastShortTermWidget::class,
+                ForecastLongTermWidget::class,
             ]);
     }
 
