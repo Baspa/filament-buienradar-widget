@@ -2,6 +2,8 @@
 
 namespace Baspa\FilamentBuienradarWidget;
 
+use Baspa\FilamentBuienradarWidget\Commands\FilamentBuienradarWidgetCommand;
+use Baspa\FilamentBuienradarWidget\Testing\TestsFilamentBuienradarWidget;
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
@@ -13,8 +15,6 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Baspa\FilamentBuienradarWidget\Commands\FilamentBuienradarWidgetCommand;
-use Baspa\FilamentBuienradarWidget\Testing\TestsFilamentBuienradarWidget;
 
 class FilamentBuienradarWidgetServiceProvider extends PackageServiceProvider
 {
@@ -86,7 +86,7 @@ class FilamentBuienradarWidgetServiceProvider extends PackageServiceProvider
         }
 
         // Testing
-        Testable::mixin(new TestsFilamentBuienradarWidget());
+        Testable::mixin(new TestsFilamentBuienradarWidget);
     }
 
     protected function getAssetPackageName(): ?string
