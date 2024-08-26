@@ -15,13 +15,6 @@ You can install the package via composer:
 composer require baspa/filament-buienradar-widget
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-buienradar-widget-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
@@ -38,14 +31,40 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'station' => MeasuringStation::VOLKEL,
+    'show' => [
+        'temperature' => true,
+        'weather_description' => true,
+        'wind_speed' => true,
+        'stationname' => true,
+        'humidity' => true,
+        'last_update' => true,
+    ],
 ];
 ```
 
+To check what stations are available, you can check the `MeasuringStation` enum in the Buienradar package.
+
 ## Usage
 
+Add the widget to your Filament page via your provider:
+
 ```php
-$filamentBuienradarWidget = new Baspa\FilamentBuienradarWidget();
-echo $filamentBuienradarWidget->echoPhrase('Hello, Baspa!');
+use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
+
+// ...
+
+->plugin(FilamentBuienradarWidgetPlugin::make())
+```
+
+Or add it to the page directly:
+
+```php
+use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
+
+// ...
+
+BuienrFilamentBuienradarWidgetPluginadarWidget::make()
 ```
 
 ## Testing
