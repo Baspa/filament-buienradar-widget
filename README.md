@@ -67,7 +67,11 @@ use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
 BuienrFilamentBuienradarWidgetPluginadarWidget::make()
 ```
 
-### Set the station per widget
+### Forecast for station
+
+![Forecast for station](./docs/forecast-for-station.png)
+
+#### Set the station per widget
 
 To set the station per widget, you can pass the station in the widget. This will override the station set in the config.
 
@@ -76,7 +80,7 @@ use Baspa\Buienradar\Enum\MeasuringStation;
 
 // ...
 
-BuienradarWidget::make([
+ForecastForStationWidget::make([
     'station' => MeasuringStation::VOLKEL,
 ])
 ```

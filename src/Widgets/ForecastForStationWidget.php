@@ -7,7 +7,7 @@ use Baspa\Buienradar\Enum\MeasuringStation;
 use Filament\Widgets\Widget;
 use Illuminate\Contracts\View\View;
 
-class BuienradarWidget extends Widget
+class ForecastForStationWidget extends Widget
 {
     public ?array $forecast = null;
 
