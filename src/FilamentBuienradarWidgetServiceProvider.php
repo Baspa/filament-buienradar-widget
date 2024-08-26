@@ -18,7 +18,7 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentBuienradarWidgetServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'filament-buienradar-widget';
+    public static string $name = 'buienradar-widget';
 
     public static string $viewNamespace = 'filament-buienradar-widget';
 
@@ -40,6 +40,7 @@ class FilamentBuienradarWidgetServiceProvider extends PackageServiceProvider
             });
 
         $configFileName = $package->shortName();
+        $configFileName = 'buienradar-widget';
 
         if (file_exists($package->basePath("/../config/{$configFileName}.php"))) {
             $package->hasConfigFile();

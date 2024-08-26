@@ -18,13 +18,13 @@ composer require baspa/filament-buienradar-widget
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="filament-buienradar-widget-config"
+ php artisan vendor:publish --tag="buienradar-widget-config"
 ```
 
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="filament-buienradar-widget-views"
+php artisan vendor:publish --tag="buienradar-widget-views"
 ```
 
 This is the contents of the published config file:
