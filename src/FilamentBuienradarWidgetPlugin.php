@@ -2,9 +2,9 @@
 
 namespace Baspa\FilamentBuienradarWidget;
 
-use Filament\Panel;
-use Filament\Contracts\Plugin;
 use Baspa\FilamentBuienradarWidget\Widgets\BuienradarWidget;
+use Filament\Contracts\Plugin;
+use Filament\Panel;
 
 class FilamentBuienradarWidgetPlugin implements Plugin
 {

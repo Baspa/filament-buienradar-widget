@@ -2,11 +2,10 @@
 
 namespace Baspa\FilamentBuienradarWidget\Widgets;
 
-use Filament\Widgets\Widget;
 use Baspa\Buienradar\Buienradar;
-use Illuminate\Contracts\View\View;
 use Baspa\Buienradar\Enum\MeasuringStation;
-use Baspa\Buienradar\ActualForecast;
+use Filament\Widgets\Widget;
+use Illuminate\Contracts\View\View;
 
 class BuienradarWidget extends Widget
 {
@@ -16,11 +15,11 @@ class BuienradarWidget extends Widget
 
     protected static string $view = 'filament-buienradar-widget::widgets.buienradar';
 
-    protected int|string|array $columnSpan = 'full';
+    protected int | string | array $columnSpan = 'full';
 
-    public null|string|array $width = null;
+    public null | string | array $width = null;
 
-    public function getColumnSpan(): int|string|array
+    public function getColumnSpan(): int | string | array
     {
         return $this->width ?? 'full';
     }
