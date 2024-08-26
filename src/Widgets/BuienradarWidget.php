@@ -9,8 +9,6 @@ use Illuminate\Contracts\View\View;
 
 class BuienradarWidget extends Widget
 {
-    public array $data;
-
     public ?array $forecast = null;
 
     protected static string $view = 'filament-buienradar-widget::widgets.buienradar';
@@ -18,6 +16,8 @@ class BuienradarWidget extends Widget
     protected int | string | array $columnSpan = 'full';
 
     public null | string | array $width = null;
+
+    public ?MeasuringStation $station = null;
 
     public function getColumnSpan(): int | string | array
     {
@@ -35,6 +35,8 @@ class BuienradarWidget extends Widget
     {
         $buienradar = new Buienradar;
 
-        $this->forecast = $buienradar->actualForecastForStation(config('buienradar-widget.station') ?? MeasuringStation::VOLKEL)->toArray();
+        $this->forecast = $buienradar->actualForecastForStation(
+            $this->station ?? config('buienradar-widget.station') ?? MeasuringStation::VOLKEL
+        )->toArray();
     }
 }

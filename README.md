@@ -67,6 +67,20 @@ use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
 BuienrFilamentBuienradarWidgetPluginadarWidget::make()
 ```
 
+### Set the station per widget
+
+To set the station per widget, you can pass the station in the widget. This will override the station set in the config.
+
+```php
+use Baspa\Buienradar\Enum\MeasuringStation;
+
+// ...
+
+BuienradarWidget::make([
+    'station' => MeasuringStation::VOLKEL,
+])
+```
+
 ## Testing
 
 ```bash
