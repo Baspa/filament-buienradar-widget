@@ -24,7 +24,8 @@ class FilamentBuienradarWidgetPlugin implements Plugin
                 ForecastReportWidget::class,
                 ForecastShortTermWidget::class,
                 ForecastLongTermWidget::class,
-            ]);
+            ])
+            ->viteTheme('vendor/vormkracht10/filament-2fa/resources/dist/filament-buienradar-widget.css');
     }
 
     public function boot(Panel $panel): void

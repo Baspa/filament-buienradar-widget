@@ -7,7 +7,7 @@
                         class="w-16 mx-auto -m-3">
                 @endif
                 @if (config('buienradar-widget.show.temperature'))
-                    <span class="text-2xl sm:text-3xl">{{ round($forecast['temperature']) }}&#x2103;</span><br>
+                    <span class="text-2xl mt-6 sm:text-3xl">{{ round($forecast['temperature']) }}&#x2103;</span><br>
                 @endif
                 @if (config('buienradar-widget.show.weather_description'))
                     <p class="mt-1 text-sm text-gray-400">
