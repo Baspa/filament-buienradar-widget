@@ -52,6 +52,7 @@ class FilamentBuienradarWidgetServiceProvider extends PackageServiceProvider
 
         if (file_exists($package->basePath('/../resources/lang'))) {
             $package->hasTranslations();
+            $this->loadJsonTranslationsFrom($package->basePath('/../resources/lang'));
         }
 
         if (file_exists($package->basePath('/../resources/views'))) {
