@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/baspa/filament-buienradar-widget/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/baspa/filament-buienradar-widget/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/baspa/filament-buienradar-widget.svg?style=flat-square)](https://packagist.org/packages/baspa/filament-buienradar-widget)
 
-This package provides a Filament widget to show the Dutch forecast from Buienradar. The package is based on the [Buienradar PHP package](https://github.com/Baspa/buienradar-php-api).
+This package provides a Filament widget to show the Dutch forecast from [Buienradar](https://www.buienradar.nl/). The package is based on the [Buienradar PHP package](https://github.com/Baspa/buienradar-php-api).
 
 ## Installation
 
