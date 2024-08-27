@@ -1,1 +1,13 @@
-{}
+{
+    "Published": "Gepubliceerd",
+    "No forecast report available.": "Geen weersverwachting beschikbaar.",
+    "Long-Term Forecast": "Langetermijnverwachting",
+    "No long-term forecast available.": "Geen langetermijnverwachting beschikbaar.",
+    "Short-Term Forecast": "Kortetermijnverwachting",
+    "No short-term forecast available.": "Geen kortetermijnverwachting beschikbaar.",
+    "Wind": "Wind",
+    "Humidity": "Luchtvochtigheid",
+    "Last update": "Laatste update",
+    "From": "Van",
+    "To": "Tot"
+}

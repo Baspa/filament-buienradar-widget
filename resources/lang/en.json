@@ -1,1 +1,13 @@
-{}
+{
+    "Published": "Published",
+    "No forecast report available.": "No forecast report available.",
+    "Long-Term Forecast": "Long-Term Forecast",
+    "No long-term forecast available.": "No long-term forecast available.",
+    "Short-Term Forecast": "Short-Term Forecast",
+    "No short-term forecast available.": "No short-term forecast available.",
+    "Wind": "Wind",
+    "Humidity": "Humidity",
+    "Last update": "Last update",
+    "From": "From",
+    "To": "To"
+}

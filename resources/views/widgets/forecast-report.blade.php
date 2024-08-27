@@ -3,7 +3,7 @@
         <div class="p-4 space-y-4">
             @if ($forecast)
                 <h2 class="text-2xl font-bold">{{ $forecast['title'] }}</h2>
-                <p class="text-sm text-gray-500">Published:
+                <p class="text-sm text-gray-500">{{ __('Published') }}:
                     {{ \Carbon\Carbon::parse($forecast['published'])->format('d M Y, H:i') }}</p>
                 <p class="text-lg font-semibold">{{ $forecast['summary'] }}</p>
                 <div class="prose max-w-none">
@@ -14,7 +14,7 @@
                     <p class="text-sm text-gray-600">{{ $forecast['authorbio'] }}</p>
                 </div>
             @else
-                <p>No forecast report available.</p>
+                <p>{{ __('No forecast report available.') }}</p>
             @endif
         </div>
     </x-filament::section>

@@ -21,21 +21,21 @@
                 @endif
                 @if (config('buienradar-widget.show.wind_speed'))
                     <p class="mt-1 text-xs text-gray-400">
-                        Wind: {{ $forecast['windspeedBft'] }} Bft {{ $forecast['winddirection'] }}
+                        {{ __('Wind') }}: {{ $forecast['windspeedBft'] }} Bft {{ $forecast['winddirection'] }}
                     </p>
                 @endif
                 @if (config('buienradar-widget.show.humidity'))
                     <p class="mt-1 text-xs text-gray-400">
-                        Luchtvochtigheid: {{ $forecast['humidity'] }}%
+                        {{ __('Humidity') }}: {{ $forecast['humidity'] }}%
                     </p>
                 @endif
                 @if (config('buienradar-widget.show.last_update'))
                     <p class="mt-1 text-xs text-gray-400">
-                        Laatste update: {{ \Carbon\Carbon::parse($forecast['timestamp'])->format('H:i') }}
+                        {{ __('Last update') }}: {{ \Carbon\Carbon::parse($forecast['timestamp'])->format('H:i') }}
                     </p>
                 @endif
             @else
-                <p>No forecast data available.</p>
+                <p>{{ __('No forecast data available.') }}</p>
             @endif
         </div>
     </x-filament::section>
