@@ -57,14 +57,38 @@ use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
 ->plugin(FilamentBuienradarWidgetPlugin::make())
 ```
 
-Or add it to the page directly:
+And optionally add the widgets to your page:
 
 ```php
-use Baspa\FilamentBuienradarWidget\Widgets\FilamentBuienradarWidgetPlugin;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastReportWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastLongTermWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastShortTermWidget;
+use Baspa\FilamentBuienradarWidget\Widgets\ForecastForStationWidget;
 
 // ...
 
-BuienrFilamentBuienradarWidgetPluginadarWidget::make()
+public function getHeaderWidgetsColumns(): int
+{
+    return 12;
+}
+
+public function getHeaderWidgets(): array
+{
+    return [
+        ForecastForStationWidget::make([
+            'width' => 4, // Define the width of the widget
+        ]),
+        ForecastShortTermWidget::make([
+            'width' => 4,
+        ]),
+        ForecastLongTermWidget::make([
+            'width' => 4,
+        ]),
+        ForecastReportWidget::make([
+            'width' => 12,
+        ]),
+    ];
+}
 ```
 
 ### Forecast for station
